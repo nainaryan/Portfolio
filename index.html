@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi , I'm <span>ARYAN</span> NAIN</h1>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------ABOUT------------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/images/aryan.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+              nostrum exercitationem quos error, at quaerat necessitatibus ab
+              voluptas temporibus debitis incidunt dolorem, tenetur nesciunt
+              delectus sint repellendus! Minima dignissimos suscipit fugit iste
+              sed unde alias enim. Molestias esse architecto magni eveniet vel
+              exercitationem delectus, unde eius ullam consequatur, qui
+              voluptate facere id totam natus doloremque excepturi est dolores?
+              Recusandae tenetur et consequuntur, commodi nihil consequatur
+              aperiam eveniet animi reiciendis quisquam incidunt harum odit
+              nesciunt cum eius corrupti asperiores ratione eligendi tempore
+              magnam non rem.  </p>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')" > Skills</p>
+                <p class="tab-links" onclick="opentab('education')" > Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Frontend</span><br>HTML , CSS , Javascript , React , tailwindCSS </li>
+                    <li><span>Backend</span><br>Node.js , Express.js , Next.js </li>
+                    <li><span>Electrical Engineering </span><br>MATLAB , Digital Storage Oscilloscope , Digital Electronics </li>
+                </ul>
+              </div>
+
+              <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2021 - Present </span><br> Electrical Engineering from DTU</li>
+                    <li><span>2020</span><br>XII from DLDAV Model School</li>
+                    <li><span>2018</span><br>X from Gateway International School</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <!------------- Projects --------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                  <img src="images/proj1.webp" >
+                  <div class="layer">
+                    <h3>Stats Duel-Cricket App </h3>
+                    <p>Web application that shows and compares cricket stats of single or two players</p>
+                    <a href="https://github.com/nainaryan/Stats-Duel" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+                </div>
+                <div class="work">
+                  <img src="images/proj2.jpg" >
+                  <div class="layer">
+                    <h3>Spotify Lite </h3>
+                    <p>Spotify clone application to stream music and manage playlists,
+                       similar to the original Spotify platform</p>
+                    <a href="https://github.com/nainaryan/Spotify-Lite" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+                </div>
+                <div class="work">
+                  <img src="images/proj3.avif" >
+                  <div class="layer">
+                    <h3> Blogs Cart </h3>
+                    <p>Blog application enabling users to create, read, update and 
+                      delete blog posts across various categories. </p>
+                    <a href="https://github.com/nainaryan/Blogs-Cart" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+  <!-- --------------------------- CONTACT SECTION -------------------- -->
+   <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> 10aryannain@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91 9149363515</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/nainaryan_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/aryan-nain-985089221/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/nainaryan" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+            </div>
+            <a href="images/resume.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2"> Submit </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright © Aryan . Made with <i class="fa-solid fa-heart"></i> by Aryan Nain</p>
+      </div>
+
+   </div>
+
+
+
+
+
+
+   <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/55db39fd3a.js" crossorigin="anonymous"></script>
+  </body>
+</html>
